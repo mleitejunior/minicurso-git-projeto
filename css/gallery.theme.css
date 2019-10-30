@@ -1,3 +1,7 @@
+body{
+  margin: 0px !important;
+}
+
 .gallery .control-operator:target ~ .controls .control-button {
   color: #ccc;
   color: rgba(255, 255, 255, 0.4);
