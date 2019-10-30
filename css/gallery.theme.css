@@ -1,5 +1,6 @@
 body{
   margin: 0px !important;
+  height: 100% !important;
 }
 
 .gallery .control-operator:target ~ .controls .control-button {
@@ -28,7 +29,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity .5s;
@@ -652,6 +653,192 @@ body{
   color: rgba(255, 255, 255, 0.8);
 }
 
+@-webkit-keyframes controlAnimation-6 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%, 20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-o-keyframes controlAnimation-6 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%, 20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes controlAnimation-6 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%, 20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-webkit-keyframes galleryAnimation-6 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes galleryAnimation-6 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes galleryAnimation-6 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
+
+.gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.gallery .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.gallery .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+.gallery .control-operator:nth-of-type(6):target ~ .item:nth-of-type(6) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-6.autoplay .control-button {
+  -webkit-animation: controlAnimation-5 35s infinite;
+  -o-animation: controlAnimation-5 35s infinite;
+  animation: controlAnimation-5 35s infinite;
+}
+
+.items-6.autoplay .item {
+  -webkit-animation: galleryAnimation-5 35s infinite;
+  -o-animation: galleryAnimation-5 35s infinite;
+  animation: galleryAnimation-5 35s infinite;
+}
+
+.items-6 .control-button:nth-of-type(1),
+.items-6 .item:nth-of-type(1) {
+  -webkit-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.items-6 .control-button:nth-of-type(2),
+.items-6 .item:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.items-6 .control-button:nth-of-type(3),
+.items-6 .item:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.items-6 .control-button:nth-of-type(4),
+.items-6 .item:nth-of-type(4) {
+  -webkit-animation-delay: 19s;
+  -o-animation-delay: 19s;
+  animation-delay: 19s;
+}
+
+.items-6 .control-button:nth-of-type(5),
+.items-6 .item:nth-of-type(5) {
+  -webkit-animation-delay: 26s;
+  -o-animation-delay: 26s;
+  animation-delay: 26s;
+}
+
+
+.gallery .control-operator:nth-of-type(7):target ~ .item:nth-of-type(7) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
 /*
 	Theme controls how everything looks in Gallery CSS.
 */
@@ -661,7 +848,8 @@ body{
 }
 
 .gallery .item {
-  height: 400px;
+  height: 100vh !important;
+  margin: 0px 0px 0px 0px;
   overflow: hidden;
   text-align: center;
   background: #4d87e2;
